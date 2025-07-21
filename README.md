@@ -7,7 +7,7 @@ Hemangioma
 This repository contains a machine learning model for diagnosing brain tumors from CT scan images.
 
 ## Project Structure
-brain-tumor-diagnosis/
+#brain-tumor-diagnosis/
 │
 ├── data/
 │   ├── train/
