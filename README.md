@@ -17,30 +17,32 @@ This repository contains a machine learning model for diagnosing brain tumors fr
 
 
 
+## Project Structure  
+The repository is organized as follows:  
 
-
-
-
-## Project Structure
+```plaintext
 
 brain-tumor-diagnosis/
 │
-├── data/
-│   ├── train/
-│   │   ├── tumor/
-│   │   └── no_tumor/
-│   └── test/
+├── data/                      # Dataset directory (raw and processed data)
+│   ├── train/                 # Training data subsets
+│   │   ├── tumor/             # Positive cases (tumor present)
+│   │   └── no_tumor/          # Negative cases (healthy)
+│   └── test/                  # Testing data subsets
 │       ├── tumor/
 │       └── no_tumor/
 │
-├── models/                # Saved model files
-├── notebooks/             # Jupyter notebooks for exploration
-├── src/
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   ├── evaluation.py
-│   └── predict.py
+├── models/                    # Serialized model files (.h5, .pkl, etc.)
+├── notebooks/                 # Experimental Jupyter notebooks
+│   ├── exploratory_analysis.ipynb
+│   └── model_prototyping.ipynb
 │
-├── requirements.txt
-├── README.md
-└── LICENSE
+├── src/                       # Source code
+│   ├── data_preprocessing.py  # Data cleaning/normalization
+│   ├── model_training.py      # ML model development
+│   ├── evaluation.py          # Performance metrics
+│   └── predict.py             # Inference pipeline
+│
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+└── LICENSE                    # Usage terms
